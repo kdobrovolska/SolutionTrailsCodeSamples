@@ -1,0 +1,285 @@
+.question {
+    background-color: lightcyan;
+}
+
+.text {
+    background-color: lightyellow;
+}
+
+.picture {
+    background-color: rgb(255, 235, 245);
+}
+
+.icon_color {
+    color: var(--colorMenu);
+    margin: 0 5px 0 0;
+}
+
+.icon_color_star {
+    color: lightgray;
+    margin: 0 5px 0 0;
+}
+
+    .icon_color_star:hover {
+        color: var(--colorMenuHover);
+    }
+
+.icon_color_star_preview {
+    color: lightgray;
+    margin: 0 5px 0 0;
+}
+
+.icon_color_star_preview {
+    color: lightgray;
+    margin: 0 5px 0 0;
+}
+
+.icon_link{
+    cursor: pointer;
+}
+
+.icon_color_red {
+    color: red;
+    margin: 0 5px 0 0;
+}
+
+.icon_color_disabled {
+    color: lightgray;
+    margin: 0 5px 0 0;
+    cursor: default;
+}
+
+.key {
+    font-weight: bold;
+}
+
+.value {
+    font-family: Arial;
+    font-size: 12px;
+    padding: 0px 0px 5px 20px;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.image_holder {
+    width: 120px;
+    height: 120px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.margin_right {
+    margin: 0px 5px 0px 0px;
+}
+
+img[data-777] {
+    float: left;
+}
+
+
+
+
+.paging_container {
+    height: 40px;
+    /*border: 1px gray solid;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_align_center {
+    text-align: center;
+    line-height: 20px;
+    height: 40px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin:10px;
+    /*background-color: yellow;
+    border: 1px solid black;*/
+}
+
+h2.text_align_center {
+    line-height: 20px;
+    margin: 5px;
+}
+
+h2.text_align_left {
+    line-height: 20px;
+    margin: 5px 5px 5px 20px;
+    line-height: 20px;
+    height: 40px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.links {
+    text-align: right;
+    padding: 0 10px;
+    font-size: 12px;
+    color: var(--colorMenu);
+    margin: 10px 0 0 0;
+}
+
+.link {
+    /*text-decoration: underline;*/
+    color: var(--colorMenu);
+    cursor: pointer;
+    font-weight: bold;
+    /*white-space: nowrap;*/
+}
+
+    .link:hover {
+        color: var(--colorMenuHover);
+    }
+span.link:hover, div.link:hover {
+    text-decoration: underline;
+}
+
+.link.disabled_link, .link.disabled_link:hover {
+    color: gray;
+    font-weight: lighter;
+    cursor: default;
+}
+
+button {
+    border-radius: 5px;
+    border-color:lightgray;
+}
+
+
+
+.checkbox {
+    background-color: var(--colorMenu);
+    color: var(--colorMenu);
+}
+
+.anim {
+    width: 20%;
+    height: 20%;
+    background-color: red;
+    position: absolute;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    z-index: 10;
+    /*opacity: 0.1;
+    border: 1px solid gray;
+    border-radius: 250px;*/
+    left: 40%;
+    top: 40%;
+}
+
+h1[data-888] {
+    color: var(--colorMenu);
+    margin: 10px 20px;
+}
+
+.dialog_question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+}
+.dialog_info {
+    padding: 5px;
+}
+
+
+
+
+    @keyframes example {
+        0% {
+            left: 40%;
+            top: 40%;
+            width: 20%;
+            height: 20%;
+        }
+
+        10% {
+            left: 30%;
+            top: 30%;
+            width: 40%;
+            height: 40%;
+        }
+
+        20% {
+            left: 20%;
+            top: 20%;
+            width: 60%;
+            height: 60%;
+        }
+
+        30% {
+            left: 10%;
+            top: 10%;
+            width: 80%;
+            height: 80%;
+        }
+
+        40% {
+            left: 0%;
+            top: 0%;
+            width: 100%;
+            height: 100%;
+        }
+
+        50% {
+            left: 10%;
+            top: 10%;
+            width: 80%;
+            height: 80%;
+        }
+
+        60% {
+            left: 20%;
+            top: 20%;
+            width: 60%;
+            height: 60%;
+        }
+
+        70% {
+            left: 30%;
+            top: 30%;
+            width: 40%;
+            height: 40%;
+        }
+
+        80% {
+            left: 40%;
+            top: 40%;
+            width: 20%;
+            height: 20%;
+        }
+
+        90% {
+            left: 45%;
+            top: 45%;
+            width: 10%;
+            height: 10%;
+        }
+    }
+
+    .anim_root {
+    }
+
+
+    .anim_container {
+        width: 100%;
+        height: 400px;
+        background-color: lightgreen;
+        position: relative;
+    }

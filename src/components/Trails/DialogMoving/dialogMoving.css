@@ -1,0 +1,58 @@
+.main_mooving_dialog {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.win {
+    resize: both;
+    border: 2px solid gray;
+    position: fixed;
+    background-color: lightgray;
+    overflow:auto;
+}
+.hor_resize {
+    resize: horizontal;
+}
+
+.header {
+    height: 20px;
+    width: 100%;
+    background-color: var(--colorMenu);
+    color: lightgray;
+    font-weight: bold;
+}
+
+.panel_dialog_mooving {
+    height: calc(100% - 60px);
+    width: calc(100%- 10px);
+    margin: 5px;
+    background-color: whitesmoke;
+    color: gray;
+}
+
+.footer_mooving {
+    background-color: lightgray;
+    height: 30px;
+    width: 100%;
+   
+}
+
+.footer_inner {
+    width: calc(100% - 5px);
+    padding: 0px 0px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    /*border: 1px solid black;*/
+}
+
+.button_mooving {
+    height: 25px;
+    margin: 0px 0px 0px 10px;
+}

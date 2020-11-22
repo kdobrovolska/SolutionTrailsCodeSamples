@@ -1,0 +1,17 @@
+export const LANDING = '/';
+export const SIGN_UP = '/signup';
+export const CORRECT_ACCOUNT = '/correctaccount';
+export const SIGN_IN = '/signin';
+export const PROFILE = '/profile';
+export const ADMIN = '/admin';
+export const PASSWORD_FORGET = '/pw-forget';
+export const ADMIN_DETAILS = '/admin/:id';
+export const ADD_TRAIL = '/addtrail';
+export const START_TRAIL = '/starttrail';
+export const TRAIL_DETAILS = '/traildetails/:id';
+export const TRAIL_DETAILS_BASE = '/traildetails/';
+export const TRAILS = '/trails';
+export const THOUGHTS = '/thoughts';
+export const ROLES = '/roles';
+export const CONTACTS = '/contacts';
+export const TRAIL_REPORT = '/trailreport';

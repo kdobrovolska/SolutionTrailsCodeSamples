@@ -1,0 +1,28 @@
+.paging {
+    height: 25px;
+    border: 1px solid gray;
+    background-color: whitesmoke;
+    color: gray;
+    font-size: 12px;
+}
+
+.button_paging {
+    height: 23px;
+    border-top: none;
+    border-bottom: none;
+    font-weight: bold;
+}
+
+.button_disabled {
+    height: 23px;
+    color: lightgray;
+    font-weight: normal;
+}
+
+.button_back {
+    border-left: none;
+}
+
+.button_forvard {
+    border-right: none;
+}

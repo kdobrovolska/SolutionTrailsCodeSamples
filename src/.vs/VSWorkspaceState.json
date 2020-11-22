@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\components",
+    "\\components\\Home",
+    "\\components\\Navigation",
+    "\\components\\PasswordChange",
+    "\\components\\PasswordForget",
+    "\\components\\Session",
+    "\\components\\SignIn",
+    "\\components\\SignUp",
+    "\\constants"
+  ],
+  "SelectedNode": "\\components\\App\\index.js",
+  "PreviewInSolutionExplorer": false
+}

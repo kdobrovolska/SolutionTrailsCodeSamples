@@ -1,0 +1,612 @@
+.main_trail_properties {
+	position: relative;
+	/*background-color: lightgreen;*/
+	width: 100%;
+	height: 100%;
+	min-width: 300px;
+}
+.main_left_right {
+	font-size: 12px;
+	font-family: "Arial";
+	/*border: 1px solid magenta;*/
+	--input_right_empty_space: 10px;
+	--right_panel_item_height: 30px;
+	--left_trail_properties_min_width: 250px;
+}
+
+
+.contaner_column {
+	display: flex;
+	flex-direction: column;
+	/*justify-content: center;*/
+	align-items: center;
+	
+}
+
+.asterix {
+	color: red;
+}
+
+.go_to_trip_detail_edit_trail {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+
+.contaner_row_left_top_panel {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 0 0 0 15px;
+}
+
+.left_top {
+	border-radius: 5px;
+	width: 100%;
+}
+
+.left_top_left {
+	border-radius: 5px;
+	width: 140px;
+	flex-grow: 0;
+	flex-shrink: 0;
+	margin: 10px 0 0 0;
+	border: 1px solid gray;
+}
+
+.left_top_right {
+	border-radius: 5px;
+	/*width: calc(100% -140px);*/
+	width: 400px;
+	margin: 10px 10px 0px 10px;
+	flex-grow: 10;
+}
+
+.panel_row {
+	width: 100%;
+	padding: 5px;
+	/*border: 1px solid red;*/
+}
+
+.right_panel_row {
+	width: 100%;
+	padding: 0px 5px;
+	/*border: 1px solid green;*/
+}
+
+.row_narrow {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+
+
+.description_item {
+	padding: 0px;
+	/*border: 1px solid yellow;*/
+}
+
+.image_button {
+	margin: 5px 5px 0px 0px;
+	width: 120px;
+}
+
+.label_left_panel {
+	margin: 0px 10px 5px 5px;
+	font-weight: bold;
+	/*border: 1px solid gray;*/
+}
+
+.item_left {
+	width: calc(100% - var(--input_right_empty_space));
+	margin: 5px 0px 10px 5px;
+}
+
+.item_top_left {
+	width: calc(100% - var(--input_right_empty_space) + 10px);
+	margin: 5px 0px 10px 0px;
+}
+textarea {
+	resize: vertical;
+}
+
+.textarea_left_panel {
+	height: 60px;
+	margin: 0 5px;
+}
+.textarea_short {
+	height: 90px;
+}
+
+
+
+.trail_type_header {
+	height: 40px;
+	padding: 5px 10px;
+	line-height: 40px;
+	margin: 0;
+	box-sizing:unset;
+}
+
+.trailList {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+/*-----------------------------------*/
+/*trail properties and stes*/
+.contaner_main_trail_and_steps {
+	display: flex;
+	flex-direction: row;
+	/*justify-content: center;*/
+	align-items: flex-start;
+	/*background-color: lightgreen;*/
+	margin: 0 10px;
+	width: calc(100% -20px);
+}
+.trail_panel {
+	/*width: 100%;
+	max-width: 700px;*/
+	width: 600px;
+	/*background-color: lightyellow;*/
+	flex-grow: 1;
+}
+
+.trail_panel_preview {
+	width: 60%;
+	flex-grow: 1;
+}
+
+.steps_panel {
+	flex-grow: 10;
+	margin: 0 0 0 10px;
+}
+
+.steps_panel_preview {
+	width: 35%;
+	flex-grow: 1;
+	margin: 0 0 0 10px;
+}
+
+.contaner_trail_preview {
+	/*width: 60%;*/
+	flex-grow: 1;
+	margin: 0 10px;
+	height: 100%;
+	border: 2px solid gray;
+	border-radius: 5px;
+}
+
+.steps {
+	border: 2px solid gray;
+	border-radius: 5px;
+	margin: 0px 10px 0px 0px;
+	width: calc(100% - 40px);
+}
+/*-----------------------------------*/
+/*left right panels horizontal*/
+
+.contaner_trail_left_right_panels {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+}
+.left_trail_properties {
+	margin: 0px 5px;
+	width: 400px;
+	min-width: var(--left_trail_properties_min_width);
+}
+
+.right_trail_properties {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid gray;
+	border-radius: 5px;
+	width: 250px;
+	margin: 0px 10px;
+}
+
+.container_change_direction {
+	display: flex;
+	flex-direction: column;
+}
+.container_label_input_right {
+	width: 100%;
+	height: var(--right_panel_item_height);
+	padding: 0 0 0 10px;
+	/*border: 1px solid cyan;*/
+	line-height: 25px;
+	display: flex;
+	flex-direction: row;
+}
+
+.container_label_input_left {
+	padding: 0px 0px;
+}
+
+.public_active_inner {
+	width: 100%;
+	height: var(--right_panel_item_height);
+	padding: 5px 5px 5px 10px;
+	/*border: 1px solid yellow;*/
+	line-height: 25px;
+	display: flex;
+	flex-direction: row;
+}
+
+.trail_right_label {
+	width: 80px;
+	flex-grow: 0;
+	font-weight: bold;
+}
+
+.trail_right_label_time {
+	width: 90px;
+	line-height: 10px;
+}
+
+.trail_right_input {
+	margin: 0px 5px 0 10px;
+	width: calc(100% - 100px);
+	line-height: 20px;
+	height: 22px;
+}
+
+.trail_right_button {
+	width: calc(100% - 40px);
+	height: var(--right_panel_item_height);
+	margin: 20px;
+}
+
+
+.trail_right_checkbox {
+	margin: 10px 20px 0 5px;
+	flex-grow: 0;
+	border: 1px solid gray;
+}
+
+.trail_right_hr {
+	width: calc(100% -20px);
+	padding: 5px 5px 10px 5px;
+}
+
+.hide {
+	display: none;
+}
+
+
+@media (min-width: 600px) and (max-width: 800px) {
+	/*trail properties and stes*/
+	
+
+	.contaner_main_trail_and_steps {
+		display: flex;
+		flex-direction: column;
+		/*justify-content: center;*/
+		align-items: center;
+		margin: 0 10px;
+		width: calc(100% -20px);
+	}
+
+	.steps {
+		border: 2px solid gray;
+		border-radius: 5px;
+		margin: 20px 20px;
+		width: calc(100% - 40px);
+	}
+
+	.steps_panel {
+		width: 100%;
+		margin: 10px;
+	}
+
+	.steps_panel_preview {
+		width: 100%;
+		margin: 10px;
+	}
+
+	.trail_panel {
+		width: 100%;
+	}
+
+	.trail_panel_preview {
+		width: 100%;
+		margin: 10px 10px 10px 0px;
+		/*box-sizing:unset;*/
+	}
+	.contaner_trail_preview {
+		width: calc(100% -20px);
+		margin: 10px 5px 10px 5px;
+		/*flex-grow: 1;*/
+	}
+	/*-----------------------------------*/
+	/*left right panels horizontal*/
+	.contaner_trail_left_right_panels {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	.left_trail_properties {
+		margin: 0px 10px;
+		width: calc(100% - 250px);
+		min-width: var(--left_trail_properties_min_width);
+	}
+
+	/*.right_trail_properties {
+		display: flex;
+		flex-direction: column;
+		border: 2px solid gray;
+		border-radius: 5px;
+		width: 250px;
+		margin: 0px 10px;
+	}*/
+
+}
+
+
+@media  (min-width: 800px) and (max-width: 1100px) {
+	/*trail properties and stes*/
+	.contaner_main_trail_and_steps {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		margin: 0 10px;
+		width: calc(100% -20px);
+	}
+	/* steps*/
+	.steps_panel {
+		flex-grow: 10;
+		/*background-color: orange;*/
+	}
+	/* trail properties or preview*/
+	.trail_panel {
+		/*max-width: 420px;*/
+		border: 2px solid gray;
+		border-radius: 5px;
+		margin: 0px 10px;
+		/*flex-grow: 1;*/
+		width: 40%;
+		/*min-width: 400px;*/
+	}
+
+	/*left right panels vertical*/
+	.contaner_trail_left_right_panels {
+		/*border: 1px solid magenta;*/
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+		width: 100%;
+	}
+
+	.left_trail_properties {
+		/*border: 2px solid blue;*/
+		width: 100%;
+		min-width: 100%;
+		margin: 0px;
+	}
+
+	.right_trail_properties {
+		display: block;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+		border: none;
+		/*border: 2px solid green;*/
+		width: 100%;
+		margin: 0;
+	}
+
+	.container_change_direction {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.public_active {
+		display: flex;
+		flex-direction: row;
+		/*border: 2px solid green;*/
+		margin: 0 0 5px 0px;
+	}
+
+
+
+	.public_active_inner {
+		width: 50%;
+		line-height: 15px;
+		height: 15px;
+		padding: 0px 0px 10px 10px;
+	}
+
+	.container_label_input_right {
+		width: 50%;
+		height: 50px;
+		/*border: 1px solid green;*/
+		line-height: 15px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.container_label_input_left {
+		width: 50%;
+		/*border: 1px solid blue;*/
+	}
+
+	.trail_right_checkbox {
+		margin: 0px 20px 0px 5px;
+		border: 1px solid gray;
+	}
+
+	.trail_right_label {
+		height: 15px;
+		margin: 0px 10px 5px 0px;
+		padding: 0;
+		font-weight: bold;
+	}
+
+	.trail_right_input {
+		margin: 0px 0px 10px 0px;
+		width: calc(100% - var(--input_right_empty_space));
+		flex-grow: 0;
+	}
+
+	.trail_right_hr {
+		width: 96%;
+		margin: 5px 2% 5px 2%;
+	}
+
+	.hide {
+		display: inline;
+	}
+}
+
+@media (max-width: 600px) {
+	/*trail properties and stes*/
+	.contaner_main_trail_and_steps {
+		display: flex;
+		flex-direction: column;
+		/*justify-content: center;*/
+		align-items: center;
+		margin: 0 10px;
+		width: calc(100% -20px);
+	}
+
+	.steps {
+		border: 2px solid gray;
+		border-radius: 5px;
+		margin: 20px 20px;
+		width: calc(100% - 40px);
+	}
+
+	.steps_panel {
+		width: 100%;
+		margin: 10px;
+		/*background-color: yellow;*/
+	}
+
+	.steps_panel_preview {
+		width: 100%;
+		margin: 10px;
+	}
+
+	.trail_panel {
+		width: 100%;
+	}
+
+	.trail_panel_preview {
+		width: 100%;
+		margin: 10px 10px 10px 0px;
+		/*border: 1px solid blue;*/
+	}
+
+	.contaner_trail_preview {
+		width: calc(100% -20px);
+		/*border: 1px solid cyan;*/
+		margin: 10px 5px 10px 5px;
+	}
+
+	/*left right panels vertical*/
+	.contaner_trail_left_right_panels {
+		/*border: 1px solid magenta;*/
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+		width: 100%;
+	}
+
+	.left_trail_properties {
+		/*border: 2px solid blue;*/
+		width: 100%;
+		min-width: 100%;
+		margin: 0px;
+	}
+
+	.right_trail_properties {
+		display: block;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: stretch;
+		border: none;
+		/*border: 2px solid green;*/
+		width: 100%;
+		margin: 0;
+	}
+
+	.container_change_direction {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.public_active {
+		display: flex;
+		flex-direction: row;
+		/*border: 2px solid green;*/
+		margin: 0 0 5px 0px;
+	}
+
+
+
+	.public_active_inner {
+		width: 50%;
+		line-height: 15px;
+		height: 15px;
+		padding: 0px 0px 10px 10px;
+	}
+
+	.container_label_input_right {
+		width: 50%;
+		height: 50px;
+		/*border: 1px solid green;*/
+		line-height: 15px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.container_label_input_left {
+		width: 50%;
+		/*border: 1px solid blue;*/
+	}
+
+	.trail_right_checkbox {
+		margin: 0px 20px 0px 5px;
+		border: 1px solid gray;
+	}
+
+	.trail_right_label {
+		height: 15px;
+		margin: 0px 10px 5px 0px;
+		padding: 0;
+		font-weight: bold;
+	}
+
+	.trail_right_input {
+		margin: 0px 0px 10px 0px;
+		/*margin: 5px 0px 10px 5px;*/
+		width: calc(100% - var(--input_right_empty_space));
+		flex-grow: 0;
+	}
+
+	.trail_right_hr {
+		width: 96%;
+		margin: 5px 2% 5px 2%;
+	}
+
+	.hide {
+		display: inline;
+	}		
+}
+
+/*@media (min-width: 1200px) {
+	.trailList {
+		width: 80%;
+		margin-left: 10%;
+	}
+}*/
